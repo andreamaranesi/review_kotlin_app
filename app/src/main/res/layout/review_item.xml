@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="body"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        tools:context=".ui.Results">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardMaxElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/review_constraint_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="20dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <CheckBox
+                            android:id="@+id/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true" />
+                    </LinearLayout>
+
+
+                    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                        android:id="@+id/review_title_fade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/selected"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_goneMarginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/review_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="@font/light"
+                            android:text="titolo del prodotto"
+                            android:textAlignment="center"
+                            android:textFontWeight="700" />
+                    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                        android:id="@+id/review_body_fade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/selected"
+                        app:layout_constraintTop_toBottomOf="@id/review_title_fade"
+                        app:layout_goneMarginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/review_body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/light"
+                            android:requiresFadingEdge="horizontal"
+                            android:text="descrizione ..."
+
+                            app:reviewBody="@{body}" />
+                    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                    <com.willy.ratingbar.RotationRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/review_stars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/review_title_fade"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/review_title_fade"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srb_clearRatingEnabled="false"
+                        app:srb_clickable="false"
+                        app:srb_drawableEmpty="@drawable/ic_star_empty"
+                        app:srb_drawableFilled="@drawable/ic_star_full"
+                        app:srb_isIndicator="true"
+                        app:srb_minimumStars="1"
+                        app:srb_numStars="5"
+                        app:srb_rating="1"
+                        app:srb_scrollable="false"
+                        app:srb_starHeight="12dp"
+                        app:srb_starPadding="1dp"
+                        app:srb_starWidth="12dp"
+                        app:srb_stepSize="0.1"></com.willy.ratingbar.RotationRatingBar>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/wishlist_button"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="0dp"
+                    android:elevation="3dp"
+                    android:tint="@null"
+                    android:tintMode="multiply"
+                    android:visibility="visible"
+                    app:elevation="8dp"
+                    app:fabCustomSize="42dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</layout>

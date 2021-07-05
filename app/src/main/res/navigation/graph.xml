@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    android:label="Grafo"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.project.review.ui.Home"
+        android:label="@string/home"
+        tools:layout="@layout/home">
+        <action
+            android:id="@+id/action_home_to_results"
+            app:destination="@id/results"
+            app:popUpTo="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/results"
+        android:name="com.project.review.ui.Results"
+        android:label="@string/results"
+        tools:layout="@layout/results">
+        <action
+            android:id="@+id/action_results_to_filters"
+            app:destination="@id/filters"
+            app:popUpTo="@id/results" />
+    </fragment>
+    <fragment
+        android:id="@+id/filters"
+        android:name="com.project.review.ui.filters.Filters"
+        android:label="@string/filters"
+        tools:layout="@layout/filters" />
+</navigation>

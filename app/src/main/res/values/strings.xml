@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="long_text" translatable="false"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci sapien. Suspendisse non dolor nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam eget auctor lectus. Nam id erat non augue ultrices laoreet. Proin venenatis eget turpis nec porta. Quisque elementum ante ut sodales finibus. Duis dignissim fermentum arcu, a auctor ligula maximus non. Nullam eget lectus ligula. Sed vitae diam facilisis, finibus nulla a, posuere lacus. Etiam luctus bibendum nisi. Pellentesque in risus lacinia enim finibus rhoncus. Pellentesque id dui eros. Mauris sit amet turpis pretium, pellentesque orci vel, mattis magna. Donec dapibus magna sit amet magna congue, in dapibus lorem maximus. Quisque eleifend erat ut risus efficitur, nec scelerisque odio auctor. Proin blandit, odio sit amet porttitor hendrerit, nisi velit tempus turpis, sit amet dignissim purus orci sed sem. Fusce blandit accumsan felis in sagittis. Vivamus lacinia mi sem, sed finibus nisl finibus ac. Cras pharetra eu leo in mollis. Nullam quis dapibus risus. Cras sit amet elit posuere, dapibus sem ac, elementum augue. Nam at feugiat dui, et iaculis orci. Vestibulum luctus tincidunt pharetra. Sed congue justo ipsum, a lobortis massa pellentesque in. Mauris elementum auctor sagittis. Pellentesque tempus est lacus, non tempus leo lacinia ac. Praesent vel nisl sit amet odio suscipit bibendum vitae sagittis metus. Cras auctor porttitor libero vitae venenatis. Duis quis semper arcu. Pellentesque molestie mauris justo, sed vestibulum purus mollis ac. Aliquam dignissim tincidunt massa, vitae sollicitudin nulla tincidunt et. Aliquam auctor lorem nec sodales scelerisque. Nulla ex quam, feugiat eget sodales vel, laoreet nec nibh. Sed gravida maximus justo, a euismod nulla facilisis et. Fusce rutrum rhoncus convallis. In hac habitasse platea dictumst. Pellentesque laoreet nulla in nibh interdum volutpat. </string>
+
+    <string name="review">Review</string>
+
+    <string name="reviews">Reviews</string>
+
+    <string name="filter_by">Filter by</string>
+
+    <string name="on_total">on</string>
+
+    <string name="close">Close</string>
+
+    <string name="connestion_lost">Connection Lost</string>
+
+    <string name="filter_recommended">Recommended</string>
+
+    <string name="recommended_filter_mode" translatable="false">CONSIGLIATA</string>
+
+    <string name="order_by">Order by</string>
+
+    <string name="filter_for_stars">Rating</string>
+
+    <string name="filter_for_marketplace" translatable="false">Marketplace</string>
+
+    <string name="search">Search</string>
+
+    <string name="search_product">Search Product..</string>
+
+    <string name="login" translatable="false">Login</string>
+
+    <string name="register">Register</string>
+
+    <string name="facebook_app_id" translatable="false">507788473577245</string>
+
+    <string name="fb_login_protocol_scheme" translatable="false">fb507788473577245</string>
+
+    <string name="next_step">Next</string>
+
+    <string name="filter_review_range_title">Rating</string>
+
+    <string name="menu_open">open</string>
+
+    <string name="menu_close">close</string>
+
+    <string name="results">Results</string>
+
+    <string name="home" translatable="false">Home</string>
+
+    <string name="filters">Filters</string>
+
+    <string name="goodreads" translatable="false">Goodreads</string>
+
+    <string name="recent_products">Recent products</string>
+
+    <string name="email" translatable="false">Email</string>
+
+    <string name="email_prova" translatable="false">test@mail.com</string>
+
+    <string name="loading">Loading</string>
+
+    <string name="password" translatable="false">Password</string>
+
+    <string name="app_name" translatable="false">Review App</string>
+
+    <string name="review_from">Review from</string>
+
+    <string name="popular_words">Popular words</string>
+
+    <string name="cancel_step">Cancel</string>
+
+    <string name="delete_researches">Delete history</string>
+
+    <string name="view_all">See all</string>
+
+    <string name="password_hint">Password must be at least 4 characters</string>
+
+    <string name="no_result">No result</string>
+
+    <string name="no_research_yet">Still No Research</string>
+
+    <string name="product_title">Product title</string>
+
+    <string name="description">Description</string>
+
+    <string name="button">Button</string>
+
+    <string name="word" translatable="false">Word</string>
+
+    <string name="dialog_confirm">Are you sure to proceed?</string>
+
+    <string name="error_message">An error occured. Please try again</string>
+
+    <string name="wait">Wait</string>
+
+    <string name="camera_granted">Camera permission granted</string>
+
+    <string name="camera_denied">Camera permission denied</string>
+
+    <string name="search_reviews">Search reviews</string>
+
+    <string name="registration_success">Registration completed</string>
+
+    <string name="general_error">Something went wrong. \\nTry again</string>
+
+    <string name="password_too_short">Password is too short</string>
+
+    <string name="invalid_email">Invalid email</string>
+
+    <string name="login_success">Login succesful</string>
+
+    <string name="from">From</string>
+
+    <string name="high_to_low">From best</string>
+    <string name="low_to_high">From worse</string>
+    <string name="most_recent">From most recent</string>
+    <string name="less_recent">From oldest</string>
+
+
+    <string name="recent_researches">Recent researches</string>
+    <string name="researches">Researches</string>
+    <string name="saved_reviews">Saved reviews</string>
+    <string name="related_products">Related products</string>
+
+</resources>

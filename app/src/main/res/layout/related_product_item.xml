@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/product_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="visible"
+                    app:imageUrl="@{imageUrl}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                    android:id="@+id/product_preloader"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shimmer_demo_angle="20"
+                    app:shimmer_demo_child_count="1"
+                    app:shimmer_demo_grid_child_count="1"
+                    app:shimmer_demo_layout="@layout/shimmer_product_image"
+                    app:shimmer_demo_layout_manager_type="linear_horizontal"
+                    app:shimmer_demo_shimmer_color="?attr/colorPrimaryDark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/product_title"
+                    style="@style/HeadLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toTopOf="@id/review_stars"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/product_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.willy.ratingbar.RotationRatingBar
+                    android:id="@+id/review_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/product_image"
+                    app:layout_constraintTop_toBottomOf="@id/product_title"
+
+                    app:srb_clearRatingEnabled="false"
+                    app:srb_clickable="false"
+                    app:srb_drawableEmpty="@drawable/ic_star_empty"
+                    app:srb_drawableFilled="@drawable/ic_star_full"
+                    app:srb_isIndicator="true"
+                    app:srb_minimumStars="1"
+                    app:srb_numStars="5"
+                    app:srb_rating="1"
+                    app:srb_scrollable="false"
+                    app:srb_starHeight="12dp"
+                    app:srb_starPadding="1dp"
+                    app:srb_starWidth="12dp"
+                    app:srb_stepSize="0.1"></com.willy.ratingbar.RotationRatingBar>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</layout>

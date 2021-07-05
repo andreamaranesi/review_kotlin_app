@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="review_range_slider">
+        <item>1</item>
+        <item>5</item>
+    </array>
+    <string-array name="filter_slider">
+        <item>1.0 su 5.0</item>
+        <item>2.0 su 5.0</item>
+        <item>3.0 su 5.0</item>
+        <item>4.0 su 5.0</item>
+        <item>5.0 su 5.0</item>
+    </string-array>
+</resources>

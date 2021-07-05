@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="navigation_drawer_close">Close drawer</string>
+
+    <string name="review">Recensione</string>
+
+    <string name="reviews">Recensioni</string>
+
+    <string name="filter_by">Filtra per</string>
+
+    <string name="on_total">su</string>
+
+    <string name="filter_recommended">Consigliati</string>
+
+    <string name="close">Chiudi</string>
+
+    <string name="connestion_lost">Connessione Persa</string>
+
+    <string name="order_by">Ordina Per</string>
+
+    <string name="review_from">Recensione da</string>
+
+    <string name="filter_for_stars">Valutazione</string>
+
+    <string name="popular_words">Parole Ricorrenti</string>
+
+    <string name="search">Cerca</string>
+
+    <string name="search_product">Cerca Prodotto..</string>
+
+    <string name="register">Registrati</string>
+
+    <string name="cancel_step">Annulla</string>
+
+    <string name="delete_researches">Elimina Ricerche</string>
+
+    <string name="view_all">Vedi Tutto</string>
+
+    <string name="filter_review_range_title">Valutazione</string>
+
+    <string name="menu_open">apri</string>
+
+    <string name="menu_close">chiudi</string>
+
+    <string name="results">Risultati</string>
+
+    <string name="filters">Filtri</string>
+
+    <string name="loading">Caricamento</string>
+
+    <string name="password_hint">La password deve essere lunga almeno 4 caratteri</string>
+
+    <string name="no_result">Nessun risultato</string>
+
+    <string name="no_research_yet">Ancora Nessuna Ricerca</string>
+
+    <string name="product_title">Titolo prodoto</string>
+
+    <string name="next_step">Prosegui</string>
+
+    <string name="recent_products">Prodotti recenti</string>
+
+    <string name="description">Descrizione</string>
+
+    <string name="button">Pulsante</string>
+
+    <string name="dialog_confirm">Sicuro di procedere?</string>
+
+    <string name="navigation_drawer_open">Apri drawer</string>
+
+    <string name="error_message">Si è verificato un errore. Riprova</string>
+
+    <string name="wait">Attendere</string>
+
+    <string name="camera_granted">Permessi fotocamera concessi</string>
+
+    <string name="camera_denied">Permessi fotocamera negati</string>
+
+    <string name="search_reviews">Cerca recensioni</string>
+
+    <string name="registration_success">Registrazione avvenuta con successo</string>
+
+    <string name="general_error">Qualcosa è andato storto. \\nRiprova</string>
+
+    <string name="password_too_short">La password è troppo corta</string>
+
+    <string name="invalid_email">Email non valida</string>
+
+    <string name="login_success">Login avvenuto correttamente</string>
+
+    <string name="from">Da</string>
+
+    <string name="high_to_low">Dalla migliore</string>
+    <string name="low_to_high">Dalla peggiore</string>
+    <string name="most_recent">Dalla più recente</string>
+    <string name="less_recent">Dalla più vecchia</string>
+
+    <string name="recent_researches">Ricerche recenti</string>
+    <string name="researches">Ricerche</string>
+    <string name="saved_reviews">Recensioni salvate</string>
+    <string name="related_products">Prodotti suggeriti</string>
+
+
+</resources>
